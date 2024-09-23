@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Here is Your Form</h1>
+    </center>
+
+    <form action="/myaction.php" name="myForm" onsubmit="return validateform()" method="post">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" ><b> <span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" > <span class="formerror"><b></b></span>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" > <span class="formerror"><b></b></span>
+        </div>
+
+        <div class="formdesign" id="pass">
+            passward: <input type="fpass" name="pass" > <span class="formerror"><b></b></span>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            confirm passward: <input type="fcpass" name="cpass" > <span class="formerror"><b></b></span>
+        </div>
+
+         <input class="btn" type="submit" value="submit">   
+    </form>
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
